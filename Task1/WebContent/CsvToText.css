@@ -1,0 +1,16 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    -webkit-text-size-adjust: none;
+}

@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>Welcome to JavaScript</p>  
+<form>
+	<label for="file-input">Choose File</label>
+	<input type="file" id="file-input" style="display:none" accept="text/plain"/>
+	<input type="text" id="out">
+    	file contents will appear here
+	</input>
+</form>
+</body>
+<script src="CsvToText.js"></script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Coding in JavaScript</title>
+        <link rel="stylesheet" href="CsvToText.css">
+        <script defer src="CsvToText.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <label>Upload the CSV File here: </label>
+            <input type="file" id="cvsfile" onchange="openCSV(event);">
+            <br><br>
+            <section class="csv-details">
+                <h4>Input: </h4>
+                <!-- <div id="input-div" class="textarea" contenteditable></div> -->
+                <h4>Output: </h4>
+                <!-- <div id="output-div" class="textarea" contenteditable></div> -->
+            </section>
+            <textarea class="textfield" id="input-textarea"></textarea>
+            <textarea class="textfield" id="output-textarea"></textarea>
+        </div>
+    </body>
+</html>
