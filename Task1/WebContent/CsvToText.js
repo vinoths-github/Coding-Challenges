@@ -96,16 +96,12 @@ function spatialInterpolation(m,x,y) {
 
     // scanning the matrix 
     for (var x1 = x-1; x1 >= 0; x1--) {
-    	console.log("x1 : "+x1);
     	for (var y1 = y-1; y1 >= 0; y1--) {
-    		console.log("y1 : "+y1);
     		// if any index with non-zero value then try 
             // for all rectangles 
             if (m[x1][y1] != 0) {
             	for (var x2 = x + 1; x2 < rows; x2++) {
-            		console.log("x2 : "+x2);
             		for (var y2 = y + 1; y2 < columns; y2++) {
-            			console.log("y2 : "+ y2);
             			if (m[x1][y2] != 0 && m[x2][y1] != 0 && m[x2][y2] != 0) {		/*Based on the Bilinear Interpolation formula*/
                         	result = (m[x1][y1]*(x2-x)*(y2-y) +
                         			  m[x2][y1]*(x-x1)*(y2-y) +
