@@ -106,7 +106,7 @@ function spatialInterpolation(m,x,y) {
                         	result = (m[x1][y1]*(x2-x)*(y2-y) +
                         			  m[x2][y1]*(x-x1)*(y2-y) +
                         			  m[x1][y2]*(x2-x)*(y-y1) +
-                        			  m[x2][y2]*(x-x1)*(y-y1)) / ((x2-x1)*(y2-y1));			/*https://en.wikipedia.org/wiki/Bilinear_interpolation*/
+                        			  m[x2][y2]*(x-x1)*(y-y1)) / ((x2-x1)*(y2-y1));			/*For reference https://en.wikipedia.org/wiki/Bilinear_interpolation*/
                         	//result = Math.round( ( result + Number.EPSILON ) * 100 ) / 100;	/* To fix the decimals to 2 places*/
                         	console.log("success");
                         	return Math.floor(result);
@@ -164,7 +164,7 @@ function linearInterpolation(line,n) {		/*Interpolate the bad values(zero) one b
 			result = line[next];
 		}
 	}
-	if (prevset && nextset) {		/*Based on the Interpolation formula (y-y1)/(x-x1) = (y2-y1)/(x2-x1)*/
+	if (prevset && nextset) {		/*Based on the Linear Interpolation formula (y-y1)/(x-x1) = (y2-y1)/(x2-x1)*/
 		result = parseFloat(line[prev]) + parseFloat(((line[next] - line[prev])/(next-prev))*(n - prev));
 		prevset = false;
 		nextset = false;

@@ -4,7 +4,7 @@
 
 body {
     margin: 30px;
-    font-family: sans-serif;
+    font-family: Helvetica;
     font-size: 14px;
 }
 
@@ -16,5 +16,5 @@ body {
 }
 
 .textfield {
-	max-height: 300px;	
+	max-height: 300px;
 }
