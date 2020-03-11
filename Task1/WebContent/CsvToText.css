@@ -14,3 +14,7 @@ body {
     width: 50%;
     -webkit-text-size-adjust: none;
 }
+
+.textfield {
+	max-height: 300px;	
+}
