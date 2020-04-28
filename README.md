@@ -1,4 +1,4 @@
-# NavVis-Tasks
+# Coding Challenges
 
 Task 1 :
  Both Bilinear Interpolation and Linear Interpolations were used. When the former fails, the latter will be used to calculate the interpolation.
